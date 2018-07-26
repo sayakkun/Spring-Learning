@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="q1" class="com.dev.CIWithCollectionExample.Question">
+		<constructor-arg value="1" type="int"></constructor-arg>
+		<constructor-arg value="Which of the following is not a pair of parent and child, who have both won Nobel Prize?"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>Marie Curie and Irene Curie</value>
+				<value>Neils Bohr, Agge Bohr</value>
+				<value>Herman Emil Fischer, Hans Fischer</value>
+				<value>J J Thompson, George Paget Thompson</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>  
