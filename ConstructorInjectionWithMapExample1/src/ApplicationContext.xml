@@ -16,3 +16,6 @@
 	</bean>
 
 </beans>  
+<!-- 
+In case key is a ref to a class, key-ref
+In case value is a ref to a class, value-ref -->
