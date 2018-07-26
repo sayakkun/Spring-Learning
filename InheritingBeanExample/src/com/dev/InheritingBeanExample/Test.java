@@ -10,3 +10,12 @@ public class Test {
 		emp1.displayInfo();
 	}
 }
+/*Note, that spring bean inheritance has nothing to do with java inheritance
+But the concept is same
+you can make a parent bean pure abstract
+by doing something like this:
+ <bean id = "beanTeamplate" abstract = "true">
+ 	<!--constructor-args-->
+ 	<!--or property-->
+   </bean>
+*/
