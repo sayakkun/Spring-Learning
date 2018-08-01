@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!--this will work as the Person class contains a variable named addr-->
+	<bean id="address" class="com.dev.AWExample.Address">
+		<property name="addressLine" value="j-4,106/B, DDA Flats, Kalkaji"/>
+		<property name="city" value="New Delhi"/>
+		<property name="postCode" value="110019"/>
+		<property name="state" value="Delhi"/>
+	</bean>  
+	<bean id="person" class="com.dev.AWExample.Person" autowire="byName">
+		<property name="name" value="Sayak Haldar"/>
+		<property name="age" value="25"/>
+		<property name="gender" value="Male"/>
+	</bean>
+</beans>
